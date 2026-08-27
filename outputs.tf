@@ -16,3 +16,8 @@ output "aws_region" {
   description = "AWS region Terraform is configured to use"
   value       = data.aws_region.current.region
 }
+
+output "vpc_id" {
+  description = "ID of the OLRS Tech VPC"
+  value       = aws_vpc.main.id
+}
