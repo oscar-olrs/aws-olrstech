@@ -51,3 +51,20 @@ output "private_route_table_id" {
   description = "ID of the OLRS private route table"
   value       = aws_route_table.private.id
 }
+
+
+
+
+########### Route 53
+
+output "route53_zone_id" {
+  description = "Route 53 hosted zone ID for olrstech.com"
+  value       = aws_route53_zone.olrstech.zone_id
+}
+
+output "route53_name_servers" {
+  description = "Route 53 authoritative name servers for olrstech.com"
+  value       = aws_route53_zone.olrstech.name_servers
+}
+
+

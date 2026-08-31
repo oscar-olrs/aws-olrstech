@@ -97,6 +97,12 @@ resource "aws_route_table" "private" {
   }
 }
 
+resource "aws_route" "private_internet" {
+  route_table_id         = aws_route_table.private.id
+  destination_cidr_block = "0.0.0.0/0"
+  network_interface_id   = aws_instance.ts01.primary_network_interface_id
+}
+
 resource "aws_route_table_association" "private" {
   subnet_id      = aws_subnet.private_a.id
   route_table_id = aws_route_table.private.id
