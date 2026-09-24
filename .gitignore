@@ -8,3 +8,7 @@ crash.*.log
 .terraform.tfstate.lock.info
 .env
 .env.*
+.DS_Store
+*.tfplan
+.build/
+__pycache__/

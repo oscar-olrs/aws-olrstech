@@ -1,0 +1,9 @@
+# After creating the owner in the NEW portal Cognito pool, use that user's sub.
+bootstrap_admin_sub = ""
+owner_email = "admin@olrstech.com"
+provisioning_enabled = false
+adapter_path = "C:\\ProgramData\\OLRS\\Onboarding\\Invoke-OnboardingAdapter.ps1"
+
+graph_tenant_id = ""
+graph_client_id = ""
+graph_certificate_thumbprint = ""

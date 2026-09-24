@@ -68,3 +68,61 @@ output "route53_name_servers" {
 }
 
 
+########## EC2 Instances
+
+output "ec2_olrs-ts01_id" {
+  description = "Instance ID of olrs-ts01"
+  value       = aws_instance.ts01.id
+}
+
+output "ec2_olrs-dc01_id" {
+  description = "Instance ID of olrs-dc01"
+  value       = aws_instance.dc01.id
+}
+
+
+########## OLRS Tech Website
+
+output "website_url" {
+  description = "Primary OLRS Tech website URL"
+  value       = "https://${local.website_domain}"
+}
+
+output "website_www_url" {
+  description = "WWW OLRS Tech website URL"
+  value       = "https://${local.website_www_domain}"
+}
+
+output "website_s3_bucket" {
+  description = "Private S3 bucket containing OLRS Tech website files"
+  value       = aws_s3_bucket.website.id
+}
+
+output "website_cloudfront_domain" {
+  description = "CloudFront-generated domain name"
+  value       = aws_cloudfront_distribution.website.domain_name
+}
+
+output "website_cloudfront_distribution_id" {
+  description = "CloudFront distribution ID"
+  value       = aws_cloudfront_distribution.website.id
+}
+
+
+########### Onboarding S3
+
+data "terraform_remote_state" "onboarding" {
+  backend = "s3"
+
+  config = {
+    bucket  = "olrs-terraform-state"
+    key     = "lab/onboarding/terraform.tfstate"
+    region  = "us-west-2"
+    profile = "olrstech-admin"
+  }
+}
+
+output "onboarding_s3_bucket" {
+  description = "Private S3 bucket containing the onboarding application"
+  value       = data.terraform_remote_state.onboarding.outputs.site_s3_bucket
+}

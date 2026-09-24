@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<defs><radialGradient id="glow" cx="15%" cy="15%" r="75%"><stop stop-color="#153984"/><stop offset="1" stop-color="#081526"/></radialGradient><linearGradient id="wave" x2="1" y2="1"><stop stop-color="#2366bb" stop-opacity="0.22"/><stop offset="1" stop-color="#0a2448" stop-opacity="0.1"/></linearGradient></defs>
+<path fill="url(#glow)" d="M0 0h1920v1080H0z"/>
+<g fill="none" stroke="#2c70ca" stroke-opacity="0.3" stroke-width="2">
+<path d="M-200 1050C350 200 950 1500 2120 280"/><path d="M-200 1010C350 160 950 1460 2120 240"/><path d="M-200 965C350 115 950 1415 2120 195"/><path d="M-200 915C350 65 950 1365 2120 145"/><path d="M-200 855C350 5 950 1305 2120 85"/>
+</g><path d="M-200 1080C350 230 950 1530 2120 310V1080Z" fill="url(#wave)"/>
+</svg>

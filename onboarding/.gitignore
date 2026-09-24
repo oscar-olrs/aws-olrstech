@@ -1,0 +1,10 @@
+.terraform/
+.build/
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfvars
+*.tfvars.json
+__pycache__/
+.env
+.DS_Store

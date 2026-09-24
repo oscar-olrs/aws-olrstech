@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 320" fill="none">
+  <defs>
+    <linearGradient id="bgfallback" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#081426"/>
+      <stop offset="55%" stop-color="#0b1d3a"/>
+      <stop offset="100%" stop-color="#0a1830"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="540" height="320" fill="url(#bgfallback)"/>
+
+
+  <!-- CLOUD (precisely traced from the original reference, single centerline stroke) -->
+  <path d="M 447.9 124.0 C 443.3 111.6 436.3 99.2 426.2 89.9 C 416.2 80.6 400.7 72.1 387.5 68.2 C 374.3 64.3 360.8 64.0 347.2 66.7 C 333.6 69.3 320.5 85.7 305.4 83.7 C 290.2 81.7 271.7 59.2 255.8 54.2 C 239.8 49.3 224.3 49.3 209.2 54.2 C 194.2 59.2 177.2 67.4 165.8 83.7 C 154.5 100.0 152.7 140.0 141.1 151.9 C 129.4 163.8 108.2 151.1 96.1 155.0 C 84.0 158.9 74.7 162.4 68.2 175.2 C 61.7 187.9 55.5 216.2 57.4 231.0 C 59.2 245.7 70.5 256.1 79.0 263.5 C 87.6 270.9 95.6 274.8 108.5 275.9 C 121.4 277.0 129.9 268.9 156.6 269.7 C 183.2 270.5 235.9 280.9 268.2 280.6 C 300.4 280.2 328.9 273.6 350.3 268.2 C 371.7 262.7 382.1 258.5 396.8 248.0 C 411.5 237.5 429.0 218.6 438.7 204.6 C 448.3 190.7 452.6 177.8 454.2 164.3 C 455.7 150.8 452.6 136.4 447.9 124.0 Z"
+        stroke="#2258f1" stroke-width="31" stroke-linejoin="round" stroke-linecap="round" fill="none"/>
+
+  <!-- SERVER BARS -->
+  <g>
+    <rect x="168" y="123" width="140" height="42" rx="6" fill="#050b18" stroke="#ffffff" stroke-width="3.1"/>
+    <rect x="182" y="139" width="10" height="10" fill="#ffffff" transform="rotate(45 187 144)"/>
+    <rect x="203" y="139" width="10" height="10" fill="#ffffff" transform="rotate(45 208 144)"/>
+    <rect x="244" y="141" width="25" height="5" rx="2" fill="#2258f1"/>
+    <rect x="273" y="141" width="14" height="4" rx="2" fill="#2258f1"/>
+
+    <rect x="168" y="177" width="140" height="42" rx="6" fill="#050b18" stroke="#ffffff" stroke-width="3.1"/>
+    <rect x="182" y="193" width="10" height="10" fill="#ffffff" transform="rotate(45 187 198)"/>
+    <rect x="203" y="193" width="10" height="10" fill="#ffffff" transform="rotate(45 208 198)"/>
+    <rect x="244" y="195" width="25" height="5" rx="2" fill="#2258f1"/>
+    <rect x="273" y="195" width="14" height="4" rx="2" fill="#2258f1"/>
+
+    <rect x="168" y="231" width="140" height="42" rx="6" fill="#050b18" stroke="#ffffff" stroke-width="3.1"/>
+    <rect x="182" y="247" width="10" height="10" fill="#ffffff" transform="rotate(45 187 252)"/>
+    <rect x="203" y="247" width="10" height="10" fill="#ffffff" transform="rotate(45 208 252)"/>
+    <rect x="244" y="249" width="25" height="5" rx="2" fill="#2258f1"/>
+    <rect x="273" y="249" width="14" height="4" rx="2" fill="#2258f1"/>
+  </g>
+
+  <!-- CONNECTOR LINES (one node per line) -->
+  <g stroke="#2258f1" stroke-width="2.8" fill="none">
+    <path d="M448 115 H480 L510 75"/>
+    <path d="M456 190 H535"/>
+    <path d="M443 250 L480 285 H510"/>
+  </g>
+  <g fill="#050b18" stroke="#2258f1" stroke-width="2.8">
+    <circle cx="480" cy="115" r="5"/>
+    <circle cx="535" cy="190" r="5"/>
+    <circle cx="480" cy="285" r="5"/>
+  </g>
+
+  <!-- CIRCLES -->
+  <circle cx="510" cy="75" r="40" fill="#050b18" stroke="#2258f1" stroke-width="3.6"/>
+  <circle cx="510" cy="190" r="40" fill="#050b18" stroke="#2258f1" stroke-width="3.6"/>
+  <circle cx="510" cy="285" r="38" fill="#050b18" stroke="#2258f1" stroke-width="3.6"/>
+
+  <!-- SHIELD + PADLOCK -->
+  <g transform="translate(492,55)">
+    <path d="M17 1 L30 7.5 L30 21 C30 32 24 40 17 43 C10 40 4 32 4 21 L4 7.5 Z"
+          stroke="#ffffff" stroke-width="2.5" stroke-linejoin="round" fill="none"/>
+    <path d="M12 19.5 V15.5 a5 5 0 0 1 10 0 V19.5" stroke="#ffffff" stroke-width="2.2" fill="none"/>
+    <rect x="10" y="19" width="14" height="10.5" rx="1.8" fill="#ffffff"/>
+  </g>
+
+  <!-- PEOPLE GROUP -->
+  <g transform="translate(484,168)" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linejoin="round">
+    <circle cx="10.5" cy="12" r="6.5" fill="#050b18"/>
+    <circle cx="38" cy="12" r="6.5" fill="#050b18"/>
+    <circle cx="24.5" cy="9.5" r="8.3" fill="#050b18"/>
+    <path d="M2 32c0-8.2 5.7-13.5 12.5-13.5 2 0 3.9.5 5.5 1.4" fill="#050b18"/>
+    <path d="M47 32c0-8.2-5.7-13.5-12.5-13.5-2 0-3.9.5-5.5 1.4" fill="#050b18"/>
+    <path d="M11.3 32.3c0-9.1 6.5-15 13.2-15s13.2 5.9 13.2 15" fill="#050b18"/>
+  </g>
+
+  <!-- LAPTOP -->
+  <g transform="translate(484,265)" stroke="#ffffff" stroke-width="2.4" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <rect x="3" y="2" width="38" height="23" rx="2"/>
+    <path d="M0 27h44l-4.5 6H4.5Z"/>
+    <path d="M19.5 10 L26 10 L20 16.5 L26.5 16.5 L17 24 L20 17 L15 17Z" fill="#ffffff" stroke="none"/>
+  </g>
+</svg>
